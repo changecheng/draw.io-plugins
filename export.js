@@ -23,7 +23,7 @@ Draw.loadPlugin(function(ui) {
 	function drawInlineSVG(){ 
 	  if(imgDOM){
 	  	try{
-			var svgData = graph.getSvg('#ffffff',null,null,false,null,false)
+			var svgData = graph.getSvg(null,null,null,false,null,false)
 		  	var svgURL = new XMLSerializer().serializeToString(svgData);
 
 		  	var img  = new Image();
